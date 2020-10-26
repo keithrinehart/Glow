@@ -1,0 +1,42 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #000;
+
+}
+
+
+.logo {
+    color: #fff;
+    font-size: 5em;
+    text-shadow: 0 0  2px #0f0,
+                 0 0  5px #0f0,
+                 0 0  8px #0f0,
+                 0 0 11px #0f0,
+                 0 0 15px #0f0,
+                 0 0 22px #0f0;
+    animation: anime 5s linear infinite alternate;             
+}
+
+
+@keyframes anime
+{
+    0%
+    {
+        filter: hue-rotate(0deg);
+    }
+    100%
+    {
+        filter: hue-rotate(360deg);
+    }
+}
